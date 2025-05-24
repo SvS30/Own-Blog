@@ -9,21 +9,86 @@
     "contact": "Contacto"
   },
   "hero": {
-    "role": "Desarrollador Backend Senior",
+    "role": "Desarrollador Backend",
     "name": "Salim Vazquez Solis",
-    "description": "Construyendo sistemas backend robustos y escalables con más de 8 años de experiencia en sistemas distribuidos y arquitectura en la nube.",
+    "description": "Construyendo sistemas backend robustos y escalables con más de 3 años de experiencia en sistemas distribuidos y arquitectura en la nube.",
     "contact": "Contactar",
     "viewProjects": "Ver Proyectos"
   },
   "skills": {
     "title": "Logros Técnicos",
     "description": "Historial probado de entrega de soluciones y optimizaciones de alto impacto en varios dominios técnicos.",
-    "exploring": "Actualmente Explorando"
+    "exploring": "Actualmente Explorando",
+    "achievements": [
+      {
+        "title": "Optimización del Rendimiento de Consultas",
+        "description": "Se optimizaron consultas críticas de bases de datos en un sistema financiero de alto tráfico",
+        "metrics": "Se redujo el tiempo promedio de ejecución de consultas de 20s a 2s, mejorando la respuesta general del sistema en un 90%",
+        "technologies": [
+          "PostgreSQL",
+          "Redis",
+          "Optimización de Consultas"
+        ]
+      },
+      {
+        "title": "Arquitectura de Microservicios",
+        "description": "Se lideró la migración de una arquitectura monolítica a microservicios",
+        "metrics": "Se redujo el tiempo de implementación en un 75% y se mejoró la fiabilidad del sistema en un 99.9%",
+        "technologies": [
+          "Node.js",
+          "Docker",
+          "Kubernetes",
+          "AWS"
+        ]
+      },
+      {
+        "title": "Procesamiento de Datos en Tiempo Real",
+        "description": "Se diseñó e implementó un pipeline de procesamiento de datos en tiempo real",
+        "metrics": "Procesamiento exitoso de más de 1 millón de eventos por segundo con una latencia inferior a 100ms",
+        "technologies": [
+          "Kafka",
+          "Elasticsearch",
+          "Python"
+        ]
+      },
+      {
+        "title": "Implementación de API Gateway",
+        "description": "Se desarrolló una API Gateway centralizada para microservicios",
+        "metrics": "Se redujo el tiempo de respuesta de la API en un 60% y se implementó la limitación de tasas, reduciendo la carga del servidor en un 40%",
+        "technologies": [
+          "Node.js",
+          "Redis",
+          "Kong",
+          "GraphQL"
+        ]
+      },
+      {
+        "title": "Particionamiento de Bases de Datos (Sharding)",
+        "description": "Se implementó una estrategia de particionamiento de bases de datos para escalado",
+        "metrics": "Se manejó un crecimiento de datos de 10x manteniendo tiempos de respuesta de consulta inferiores a 50ms",
+        "technologies": [
+          "MongoDB",
+          "Sharding",
+          "Balanceo de Carga"
+        ]
+      },
+      {
+        "title": "Mejora de la Seguridad",
+        "description": "Se implementaron medidas de seguridad integrales",
+        "metrics": "Se logró la conformidad con SOC2 y se redujeron los incidentes de seguridad en un 95%",
+        "technologies": [
+          "OAuth2",
+          "JWT",
+          "Cifrado",
+          "Auditoría de Seguridad"
+        ]
+      }
+    ]
   },
   "about": {
     "title": "Sobre Mí",
-    "subtitle": "Desarrollador Backend Senior apasionado por sistemas escalables",
-    "description": "Soy Salim Vazquez Solis, un desarrollador backend experimentado con más de 8 años de experiencia construyendo sistemas de alto rendimiento y escalables para startups y clientes empresariales.\n Con una sólida base en ciencias de la computación y un profundo entendimiento de sistemas distribuidos, he liderado equipos exitosamente para entregar soluciones backend complejas que manejan millones de peticiones diarias.\n Me apasiona el código limpio, la optimización del rendimiento y la implementación de mejores prácticas para la seguridad y confiabilidad.",
+    "subtitle": "Desarrollador Backend apasionado por sistemas escalables",
+    "description": "Soy Salim Vazquez Solis, un desarrollador backend experimentado con más de 3 años de experiencia construyendo sistemas de alto rendimiento y escalables para startups y clientes empresariales.\n Con una sólida base en ciencias de la computación y un profundo entendimiento de sistemas distribuidos, he liderado equipos exitosamente para entregar soluciones backend complejas que manejan millones de peticiones diarias.\n Me apasiona el código limpio, la optimización del rendimiento y la implementación de mejores prácticas para la seguridad y confiabilidad.",
     "stats": {
       "experience": "Años de Experiencia",
       "projects": "Proyectos Completados",
@@ -37,7 +102,7 @@
       },
       "database": {
         "title": "Diseño de Bases de Datos",
-        "description": "Optimización de sistemas de almacenamiento y recuperación de datos."
+        "description": "Optimización de sistemas de almacenamiento y gestión completa de datos."
       },
       "cloud": {
         "title": "Arquitectura en la Nube",
@@ -51,7 +116,7 @@
   },
   "experience": {
     "title": "Experiencia Laboral",
-    "description": "Más de 8 años de experiencia en la industria construyendo sistemas backend escalables y liderando equipos de desarrollo."
+    "description": "Más de 3 años de experiencia en la industria construyendo sistemas backend escalables y liderando equipos de desarrollo."
   },
   "projects": {
     "title": "Proyectos Destacados",
@@ -65,7 +130,98 @@
       "microservices": "Microservicios",
       "database": "Base de Datos",
       "cloud": "Nube"
-    }
+    },
+    "projects": [
+      {
+        "title": "DistributedCache",
+        "description": "Un sistema de caché distribuido de alto rendimiento construido con Go, que soporta múltiples políticas de desalojo y replicación de clústeres.",
+        "imageUrl": "https://images.pexels.com/photos/1181271/pexels-photo-1181271.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+        "technologies": [
+          "Go",
+          "Redis Protocol",
+          "RAFT Consensus",
+          "Docker"
+        ],
+        "githubUrl": "https://github.com/SvS30/distributedcache",
+        "demoUrl": "https://distributedcache-demo.com",
+        "category": "database",
+        "featured": true
+      },
+      {
+        "title": "MicroAuth",
+        "description": "Un microservicio seguro de autenticación y autorización con soporte para OAuth2, JWT y autenticación multifactor.",
+        "imageUrl": "https://images.pexels.com/photos/60504/security-protection-anti-virus-software-60504.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+        "technologies": [
+          "Node.js",
+          "TypeScript",
+          "MongoDB",
+          "OAuth2",
+          "Docker"
+        ],
+        "githubUrl": "https://github.com/SvS30/microauth",
+        "category": "microservices",
+        "featured": true
+      },
+      {
+        "title": "EventFlow",
+        "description": "Un framework de arquitectura basada en eventos para construir microservicios escalables con soporte para múltiples corredores de mensajes (message brokers).",
+        "imageUrl": "https://images.pexels.com/photos/7792805/pexels-photo-7792805.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+        "technologies": [
+          "Java",
+          "Spring Boot",
+          "Kafka",
+          "RabbitMQ",
+          "Avro"
+        ],
+        "githubUrl": "https://github.com/SvS30/eventflow",
+        "demoUrl": "https://eventflow-demo.com",
+        "category": "microservices",
+        "featured": true
+      },
+      {
+        "title": "DataLake CLI",
+        "description": "Una herramienta de línea de comandos para gestionar lagos de datos en AWS S3, con soporte para validación, transformación y consulta de datos.",
+        "imageUrl": "https://images.pexels.com/photos/7376/startup-photos.jpg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+        "technologies": [
+          "Python",
+          "AWS S3",
+          "Pandas",
+          "Apache Parquet"
+        ],
+        "githubUrl": "https://github.com/SvS30/datalake-cli",
+        "category": "cloud",
+        "featured": false
+      },
+      {
+        "title": "RESTful API Framework",
+        "description": "Un framework ligero para construir APIs RESTful con generación automática de documentación OpenAPI.",
+        "imageUrl": "https://images.pexels.com/photos/546819/pexels-photo-546819.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+        "technologies": [
+          "Node.js",
+          "Express",
+          "OpenAPI",
+          "JWT"
+        ],
+        "githubUrl": "https://github.com/SvS30/restful-api-framework",
+        "demoUrl": "https://api-framework-demo.com",
+        "category": "api",
+        "featured": false
+      },
+      {
+        "title": "Herramienta de Despliegue Serverless",
+        "description": "Una herramienta para desplegar y gestionar aplicaciones serverless en múltiples proveedores de nube.",
+        "imageUrl": "https://images.pexels.com/photos/1148820/pexels-photo-1148820.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+        "technologies": [
+          "TypeScript",
+          "AWS Lambda",
+          "Google Cloud Functions",
+          "Azure Functions"
+        ],
+        "githubUrl": "https://github.com/SvS30/serverless-deployment-tool",
+        "category": "cloud",
+        "featured": false
+      }
+    ]
   },
   "certifications": {
     "title": "Certificaciones",

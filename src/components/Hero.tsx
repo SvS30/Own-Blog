@@ -69,7 +69,7 @@ const Hero: React.FC<HeroProps> = ({ darkMode }) => {
             
             <div className="flex space-x-6 justify-center lg:justify-start">
               <a 
-                href="https://github.com" 
+                href="https://github.com/SvS30" 
                 target="_blank" 
                 rel="noopener noreferrer" 
                 className={`transform transition-transform hover:scale-110 ${
@@ -80,7 +80,7 @@ const Hero: React.FC<HeroProps> = ({ darkMode }) => {
                 <Github size={24} />
               </a>
               <a 
-                href="https://linkedin.com" 
+                href="https://linkedin.com/in/salim-vazquez-solis" 
                 target="_blank" 
                 rel="noopener noreferrer" 
                 className={`transform transition-transform hover:scale-110 ${
@@ -89,17 +89,6 @@ const Hero: React.FC<HeroProps> = ({ darkMode }) => {
                 aria-label="LinkedIn"
               >
                 <Linkedin size={24} />
-              </a>
-              <a 
-                href="https://twitter.com" 
-                target="_blank" 
-                rel="noopener noreferrer" 
-                className={`transform transition-transform hover:scale-110 ${
-                  darkMode ? 'text-slate-400 hover:text-white' : 'text-slate-600 hover:text-slate-900'
-                }`}
-                aria-label="Twitter"
-              >
-                <Twitter size={24} />
               </a>
             </div>
           </div>

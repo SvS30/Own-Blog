@@ -9,21 +9,86 @@
     "contact": "Contact"
   },
   "hero": {
-    "role": "Senior Backend Developer",
+    "role": "Backend Developer",
     "name": "Salim Vazquez Solis",
-    "description": "Building robust, scalable backend systems with 8+ years of experience in distributed systems and cloud architecture.",
+    "description": "Building robust, scalable backend systems with 3+ years of experience in distributed systems and cloud architecture.",
     "contact": "Get in Touch",
     "viewProjects": "View Projects"
   },
   "skills": {
     "title": "Technical Achievements",
     "description": "Proven track record of delivering high-impact solutions and optimizations across various technical domains.",
-    "exploring": "Currently Exploring"
+    "exploring": "Currently Exploring",
+    "achievements": [
+      {
+        "title": "Query Performance Optimization",
+        "description": "Optimized critical database queries in a high-traffic financial system",
+        "metrics": "Reduced average query execution time from 20s to 2s, improving overall system response by 90%",
+        "technologies": [
+          "PostgreSQL",
+          "Redis",
+          "Query Optimization"
+        ]
+      },
+      {
+        "title": "Microservices Architecture",
+        "description": "Led the migration from monolithic to microservices architecture",
+        "metrics": "Reduced deployment time by 75% and improved system reliability by 99.9%",
+        "technologies": [
+          "Node.js",
+          "Docker",
+          "Kubernetes",
+          "AWS"
+        ]
+      },
+      {
+        "title": "Real-time Data Processing",
+        "description": "Designed and implemented real-time data processing pipeline",
+        "metrics": "Successfully processing 1M+ events per second with sub-100ms latency",
+        "technologies": [
+          "Kafka",
+          "Elasticsearch",
+          "Python"
+        ]
+      },
+      {
+        "title": "API Gateway Implementation",
+        "description": "Developed centralized API gateway for microservices",
+        "metrics": "Reduced API response time by 60% and implemented rate limiting reducing server load by 40%",
+        "technologies": [
+          "Node.js",
+          "Redis",
+          "Kong",
+          "GraphQL"
+        ]
+      },
+      {
+        "title": "Database Sharding",
+        "description": "Implemented database sharding strategy for scaling",
+        "metrics": "Handled 10x data growth while maintaining sub-50ms query response times",
+        "technologies": [
+          "MongoDB",
+          "Sharding",
+          "Load Balancing"
+        ]
+      },
+      {
+        "title": "Security Enhancement",
+        "description": "Implemented comprehensive security measures",
+        "metrics": "Achieved SOC2 compliance and reduced security incidents by 95%",
+        "technologies": [
+          "OAuth2",
+          "JWT",
+          "Encryption",
+          "Security Auditing"
+        ]
+      }
+    ]
   },
   "about": {
     "title": "About Me",
-    "subtitle": "Senior Backend Developer with a passion for scalable systems",
-    "description": "I'm Salim Vazquez Solis, a seasoned backend developer with over 8 years of experience building high-performance, scalable systems for startups and enterprise clients.\nWith a strong foundation in computer science and a deep understanding of distributed systems, I've successfully led teams to deliver complex backend solutions that handle millions of requests daily.\n I'm passionate about clean code, performance optimization, and implementing best practices for security and reliability.",
+    "subtitle": "Backend Developer with a passion for scalable systems",
+    "description": "I'm Salim Vazquez Solis, a seasoned backend developer with over 3 years of experience building high-performance, scalable systems for startups and enterprise clients.\nWith a strong foundation in computer science and a deep understanding of distributed systems, I've successfully led teams to deliver complex backend solutions that handle millions of requests daily.\n I'm passionate about clean code, performance optimization, and implementing best practices for security and reliability.",
     "stats": {
       "experience": "Years Experience",
       "projects": "Projects Completed",
@@ -37,7 +102,7 @@
       },
       "database": {
         "title": "Database Design",
-        "description": "Optimizing data storage and retrieval systems."
+        "description": "Optimizing data storage and management data."
       },
       "cloud": {
         "title": "Cloud Architecture",
@@ -51,7 +116,7 @@
   },
   "experience": {
     "title": "Work Experience",
-    "description": "Over 8 years of industry experience building scalable backend systems and leading development teams."
+    "description": "Over 3 years of industry experience building scalable backend systems and leading development teams."
   },
   "projects": {
     "title": "Featured Projects",
@@ -65,7 +130,98 @@
       "microservices": "Microservices",
       "database": "Database",
       "cloud": "Cloud"
-    }
+    },
+    "projects": [
+      {
+        "title": "DistributedCache",
+        "description": "A high-performance distributed caching system built with Go, supporting multiple eviction policies and cluster replication.",
+        "imageUrl": "https://images.pexels.com/photos/1181271/pexels-photo-1181271.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+        "technologies": [
+          "Go",
+          "Redis Protocol",
+          "RAFT Consensus",
+          "Docker"
+        ],
+        "githubUrl": "https://github.com/SvS30/distributedcache",
+        "demoUrl": "https://distributedcache-demo.com",
+        "category": "database",
+        "featured": true
+      },
+      {
+        "title": "MicroAuth",
+        "description": "A secure authentication and authorization microservice with support for OAuth2, JWT, and multi-factor authentication.",
+        "imageUrl": "https://images.pexels.com/photos/60504/security-protection-anti-virus-software-60504.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+        "technologies": [
+          "Node.js",
+          "TypeScript",
+          "MongoDB",
+          "OAuth2",
+          "Docker"
+        ],
+        "githubUrl": "https://github.com/SvS30/microauth",
+        "category": "microservices",
+        "featured": true
+      },
+      {
+        "title": "EventFlow",
+        "description": "An event-driven architecture framework for building scalable microservices with support for multiple message brokers.",
+        "imageUrl": "https://images.pexels.com/photos/7792805/pexels-photo-7792805.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+        "technologies": [
+          "Java",
+          "Spring Boot",
+          "Kafka",
+          "RabbitMQ",
+          "Avro"
+        ],
+        "githubUrl": "https://github.com/SvS30/eventflow",
+        "demoUrl": "https://eventflow-demo.com",
+        "category": "microservices",
+        "featured": true
+      },
+      {
+        "title": "DataLake CLI",
+        "description": "A command-line tool for managing data lakes on AWS S3, with support for data validation, transformation, and querying.",
+        "imageUrl": "https://images.pexels.com/photos/7376/startup-photos.jpg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+        "technologies": [
+          "Python",
+          "AWS S3",
+          "Pandas",
+          "Apache Parquet"
+        ],
+        "githubUrl": "https://github.com/SvS30/datalake-cli",
+        "category": "cloud",
+        "featured": false
+      },
+      {
+        "title": "RESTful API Framework",
+        "description": "A lightweight framework for building RESTful APIs with automatic OpenAPI documentation generation.",
+        "imageUrl": "https://images.pexels.com/photos/546819/pexels-photo-546819.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+        "technologies": [
+          "Node.js",
+          "Express",
+          "OpenAPI",
+          "JWT"
+        ],
+        "githubUrl": "https://github.com/SvS30/restful-api-framework",
+        "demoUrl": "https://api-framework-demo.com",
+        "category": "api",
+        "featured": false
+      },
+      {
+        "title": "Serverless Deployment Tool",
+        "description": "A tool for deploying and managing serverless applications across multiple cloud providers.",
+        "imageUrl": "https://images.pexels.com/photos/1148820/pexels-photo-1148820.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+        "technologies": [
+          "TypeScript",
+          "AWS Lambda",
+          "Google Cloud Functions",
+          "Azure Functions"
+        ],
+        "githubUrl": "https://github.com/SvS30/serverless-deployment-tool",
+        "category": "cloud",
+        "featured": false
+      }
+    ]
   },
   "certifications": {
     "title": "Certifications",

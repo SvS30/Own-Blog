@@ -10,10 +10,14 @@ const About: React.FC<AboutProps> = ({ darkMode }) => {
   const { t } = useTranslation();
   const stats = [
     { label: t('about.stats.experience'), value: "3+" },
-    { label: t('about.stats.projects'), value: "50+" },
-    { label: t('about.stats.companies'), value: "12+" },
-    { label: t('about.stats.clients'), value: "25+" }
+    { label: t('about.stats.projects'), value: "10+" },
+    { label: t('about.stats.companies'), value: "3+" },
+    { label: t('about.stats.clients'), value: "15+" }
   ];
+  const techStack = [
+    "Node.js", "Python", "Java", "Php", "Go", "Laravel", "Django", "Express", "Docker", "Kubernetes",
+    "MongoDB", "PostgreSQL", "MySQL", "Redis", "Vue", "React", "RESTful APIs"
+  ]
 
   return (
     <section 
@@ -71,51 +75,11 @@ const About: React.FC<AboutProps> = ({ darkMode }) => {
             </div>
             
             <div className="flex flex-wrap gap-3">
-              <span className={`px-3 py-1 rounded-full text-sm font-medium ${
-                darkMode ? 'bg-slate-800 text-slate-300' : 'bg-slate-100 text-slate-700'
-              }`}>
-                Node.js
-              </span>
-              <span className={`px-3 py-1 rounded-full text-sm font-medium ${
-                darkMode ? 'bg-slate-800 text-slate-300' : 'bg-slate-100 text-slate-700'
-              }`}>
-                Python
-              </span>
-              <span className={`px-3 py-1 rounded-full text-sm font-medium ${
-                darkMode ? 'bg-slate-800 text-slate-300' : 'bg-slate-100 text-slate-700'
-              }`}>
-                Java
-              </span>
-              <span className={`px-3 py-1 rounded-full text-sm font-medium ${
-                darkMode ? 'bg-slate-800 text-slate-300' : 'bg-slate-100 text-slate-700'
-              }`}>
-                Go
-              </span>
-              <span className={`px-3 py-1 rounded-full text-sm font-medium ${
-                darkMode ? 'bg-slate-800 text-slate-300' : 'bg-slate-100 text-slate-700'
-              }`}>
-                AWS
-              </span>
-              <span className={`px-3 py-1 rounded-full text-sm font-medium ${
-                darkMode ? 'bg-slate-800 text-slate-300' : 'bg-slate-100 text-slate-700'
-              }`}>
-                Docker
-              </span>
-              <span className={`px-3 py-1 rounded-full text-sm font-medium ${
-                darkMode ? 'bg-slate-800 text-slate-300' : 'bg-slate-100 text-slate-700'
-              }`}>
-                Kubernetes
-              </span>
-              <span className={`px-3 py-1 rounded-full text-sm font-medium ${
-                darkMode ? 'bg-slate-800 text-slate-300' : 'bg-slate-100 text-slate-700'
-              }`}>
-                MongoDB
-              </span>
-              <span className={`px-3 py-1 rounded-full text-sm font-medium ${
-                darkMode ? 'bg-slate-800 text-slate-300' : 'bg-slate-100 text-slate-700'
-              }`}>
-                PostgreSQL
-              </span>
+              { techStack.map((tech, index) => (
+                <span key={index} className={`px-3 py-1 rounded-full text-sm font-medium ${ darkMode ? 'bg-slate-800 text-slate-300' : 'bg-slate-100 text-slate-700' }`}>
+                  {tech}
+                </span>
+              ))}
             </div>
           </div>
           

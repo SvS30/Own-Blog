@@ -50,20 +50,8 @@ const Contact: React.FC<ContactProps> = ({ darkMode }) => {
     {
       icon: <Mail size={24} />,
       title: "Email",
-      value: "jacob.wilson@example.com",
-      link: "mailto:jacob.wilson@example.com"
-    },
-    {
-      icon: <Phone size={24} />,
-      title: "Phone",
-      value: "+1 (555) 123-4567",
-      link: "tel:+15551234567"
-    },
-    {
-      icon: <MapPin size={24} />,
-      title: "Location",
-      value: "San Francisco, CA",
-      link: "https://maps.google.com/?q=San+Francisco,+CA"
+      value: "salimvzqz@gmail.com",
+      link: "mailto:salimvzqz@gmail.com"
     }
   ];
 
@@ -192,31 +180,6 @@ const Contact: React.FC<ContactProps> = ({ darkMode }) => {
                       <circle cx="4" cy="4" r="2"></circle>
                     </svg>
                   </a>
-                  <a 
-                    href="https://twitter.com/username" 
-                    target="_blank" 
-                    rel="noopener noreferrer" 
-                    className={`p-3 rounded-full transition-all transform hover:scale-110 ${
-                      darkMode 
-                        ? 'bg-slate-800 text-white hover:bg-slate-700' 
-                        : 'bg-slate-100 text-slate-700 hover:bg-slate-200'
-                    }`}
-                    aria-label="Twitter"
-                  >
-                    <svg 
-                      xmlns="http://www.w3.org/2000/svg" 
-                      width="20" 
-                      height="20" 
-                      viewBox="0 0 24 24" 
-                      fill="none" 
-                      stroke="currentColor" 
-                      strokeWidth="2" 
-                      strokeLinecap="round" 
-                      strokeLinejoin="round"
-                    >
-                      <path d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z"></path>
-                    </svg>
-                  </a>
                 </div>
               </div>
             </div>
@@ -315,7 +278,7 @@ const Contact: React.FC<ContactProps> = ({ darkMode }) => {
                           ? 'bg-slate-800 text-white border-slate-700 focus:border-emerald-500' 
                           : 'bg-slate-50 text-slate-900 border-slate-200 focus:border-emerald-500'
                       } border focus:ring-1 focus:ring-emerald-500 focus:outline-none`}
-                      placeholder="Project Inquiry"
+                      placeholder="Project | Inquiry"
                     />
                   </div>
                   

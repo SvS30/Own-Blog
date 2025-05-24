@@ -96,29 +96,6 @@ const Footer: React.FC<FooterProps> = ({ darkMode }) => {
                   <circle cx="4" cy="4" r="2"></circle>
                 </svg>
               </a>
-              <a 
-                href="https://twitter.com/username" 
-                target="_blank" 
-                rel="noopener noreferrer" 
-                className={`transition-colors ${
-                  darkMode ? 'text-slate-400 hover:text-white' : 'text-slate-600 hover:text-slate-900'
-                }`}
-                aria-label="Twitter"
-              >
-                <svg 
-                  xmlns="http://www.w3.org/2000/svg" 
-                  width="20" 
-                  height="20" 
-                  viewBox="0 0 24 24" 
-                  fill="none" 
-                  stroke="currentColor" 
-                  strokeWidth="2" 
-                  strokeLinecap="round" 
-                  strokeLinejoin="round"
-                >
-                  <path d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z"></path>
-                </svg>
-              </a>
             </div>
           </div>
         </div>
@@ -127,24 +104,6 @@ const Footer: React.FC<FooterProps> = ({ darkMode }) => {
           <p className={`text-sm transition-colors ${darkMode ? 'text-slate-400' : 'text-slate-600'}`}>
             &copy; {new Date().getFullYear()} Salim Vazquez Solis. All rights reserved.
           </p>
-          <div className="flex mt-4 md:mt-0">
-            <a 
-              href="#" 
-              className={`text-sm mr-4 transition-colors ${
-                darkMode ? 'text-slate-400 hover:text-white' : 'text-slate-600 hover:text-slate-900'
-              }`}
-            >
-              Privacy Policy
-            </a>
-            <a 
-              href="#" 
-              className={`text-sm transition-colors ${
-                darkMode ? 'text-slate-400 hover:text-white' : 'text-slate-600 hover:text-slate-900'
-              }`}
-            >
-              Terms of Service
-            </a>
-          </div>
         </div>
       </div>
     </footer>

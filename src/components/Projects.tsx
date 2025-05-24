@@ -21,65 +21,7 @@ const Projects: React.FC<ProjectsProps> = ({ darkMode }) => {
   const { t } = useTranslation();
   const [activeFilter, setActiveFilter] = useState<string>('all');
   
-  const projects: Project[] = [
-    {
-      title: "DistributedCache",
-      description: "A high-performance distributed caching system built with Go, supporting multiple eviction policies and cluster replication.",
-      imageUrl: "https://images.pexels.com/photos/1181271/pexels-photo-1181271.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-      technologies: ["Go", "Redis Protocol", "RAFT Consensus", "Docker"],
-      githubUrl: "https://github.com/SvS30/distributedcache",
-      demoUrl: "https://distributedcache-demo.com",
-      category: 'database',
-      featured: true
-    },
-    {
-      title: "MicroAuth",
-      description: "A secure authentication and authorization microservice with support for OAuth2, JWT, and multi-factor authentication.",
-      imageUrl: "https://images.pexels.com/photos/60504/security-protection-anti-virus-software-60504.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-      technologies: ["Node.js", "TypeScript", "MongoDB", "OAuth2", "Docker"],
-      githubUrl: "https://github.com/SvS30/microauth",
-      category: 'microservices',
-      featured: true
-    },
-    {
-      title: "EventFlow",
-      description: "An event-driven architecture framework for building scalable microservices with support for multiple message brokers.",
-      imageUrl: "https://images.pexels.com/photos/7792805/pexels-photo-7792805.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-      technologies: ["Java", "Spring Boot", "Kafka", "RabbitMQ", "Avro"],
-      githubUrl: "https://github.com/SvS30/eventflow",
-      demoUrl: "https://eventflow-demo.com",
-      category: 'microservices',
-      featured: true
-    },
-    {
-      title: "DataLake CLI",
-      description: "A command-line tool for managing data lakes on AWS S3, with support for data validation, transformation, and querying.",
-      imageUrl: "https://images.pexels.com/photos/7376/startup-photos.jpg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-      technologies: ["Python", "AWS S3", "Pandas", "Apache Parquet"],
-      githubUrl: "https://github.com/SvS30/datalake-cli",
-      category: 'cloud',
-      featured: false
-    },
-    {
-      title: "RESTful API Framework",
-      description: "A lightweight framework for building RESTful APIs with automatic OpenAPI documentation generation.",
-      imageUrl: "https://images.pexels.com/photos/546819/pexels-photo-546819.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-      technologies: ["Node.js", "Express", "OpenAPI", "JWT"],
-      githubUrl: "https://github.com/SvS30/restful-api-framework",
-      demoUrl: "https://api-framework-demo.com",
-      category: 'api',
-      featured: false
-    },
-    {
-      title: "Serverless Deployment Tool",
-      description: "A tool for deploying and managing serverless applications across multiple cloud providers.",
-      imageUrl: "https://images.pexels.com/photos/1148820/pexels-photo-1148820.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-      technologies: ["TypeScript", "AWS Lambda", "Google Cloud Functions", "Azure Functions"],
-      githubUrl: "https://github.com/SvS30/serverless-deployment-tool",
-      category: 'cloud',
-      featured: false
-    }
-  ];
+  const projects: Project[] = t('projects.projects', { returnObjects: true }) as Project[];
   
   const filteredProjects = activeFilter === 'all' 
     ? projects 
