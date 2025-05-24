@@ -1,0 +1,96 @@
+{
+  "nav": {
+    "home": "Home",
+    "about": "About",
+    "skills": "Skills",
+    "experience": "Experience",
+    "projects": "Projects",
+    "certifications": "Certifications",
+    "contact": "Contact"
+  },
+  "hero": {
+    "role": "Senior Backend Developer",
+    "name": "Salim Vazquez Solis",
+    "description": "Building robust, scalable backend systems with 8+ years of experience in distributed systems and cloud architecture.",
+    "contact": "Get in Touch",
+    "viewProjects": "View Projects"
+  },
+  "skills": {
+    "title": "Technical Achievements",
+    "description": "Proven track record of delivering high-impact solutions and optimizations across various technical domains.",
+    "exploring": "Currently Exploring"
+  },
+  "about": {
+    "title": "About Me",
+    "subtitle": "Senior Backend Developer with a passion for scalable systems",
+    "description": "I'm Salim Vazquez Solis, a seasoned backend developer with over 8 years of experience building high-performance, scalable systems for startups and enterprise clients.\nWith a strong foundation in computer science and a deep understanding of distributed systems, I've successfully led teams to deliver complex backend solutions that handle millions of requests daily.\n I'm passionate about clean code, performance optimization, and implementing best practices for security and reliability.",
+    "stats": {
+      "experience": "Years Experience",
+      "projects": "Projects Completed",
+      "companies": "Companies Worked With",
+      "clients": "Satisfied Clients"
+    },
+    "services": {
+      "backend": {
+        "title": "Backend Development",
+        "description": "Building robust APIs and services that scale."
+      },
+      "database": {
+        "title": "Database Design",
+        "description": "Optimizing data storage and retrieval systems."
+      },
+      "cloud": {
+        "title": "Cloud Architecture",
+        "description": "Designing scalable infrastructure on AWS, GCP, and Azure."
+      },
+      "security": {
+        "title": "Security",
+        "description": "Implementing robust security practices and protocols."
+      }
+    }
+  },
+  "experience": {
+    "title": "Work Experience",
+    "description": "Over 8 years of industry experience building scalable backend systems and leading development teams."
+  },
+  "projects": {
+    "title": "Featured Projects",
+    "description": "Browse through some of my recent open-source projects and contributions.",
+    "viewProject": "View Project",
+    "viewAll": "View All Projects on GitHub",
+    "filters": {
+      "all": "All Projects",
+      "featured": "Featured",
+      "api": "API",
+      "microservices": "Microservices",
+      "database": "Database",
+      "cloud": "Cloud"
+    }
+  },
+  "certifications": {
+    "title": "Certifications",
+    "description": "Professional certifications that validate my expertise in various technologies and platforms.",
+    "verify": "Verify Credential",
+    "issued": "Issued"
+  },
+  "contact": {
+    "title": "Get In Touch",
+    "description": "Have a project in mind or interested in working together? Feel free to reach out!",
+    "form": {
+      "name": "Your Name",
+      "email": "Your Email",
+      "subject": "Subject",
+      "message": "Message",
+      "send": "Send Message",
+      "sending": "Sending...",
+      "success": "Thanks for your message! I'll get back to you soon."
+    },
+    "info": {
+      "title": "Contact Information",
+      "connect": "Connect with me"
+    }
+  },
+  "footer": {
+    "description": "Building robust, scalable backend systems with passion and precision."
+  }
+}

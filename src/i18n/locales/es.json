@@ -1,0 +1,96 @@
+{
+  "nav": {
+    "home": "Inicio",
+    "about": "Sobre mí",
+    "skills": "Habilidades",
+    "experience": "Experiencia",
+    "projects": "Proyectos",
+    "certifications": "Certificaciones",
+    "contact": "Contacto"
+  },
+  "hero": {
+    "role": "Desarrollador Backend Senior",
+    "name": "Salim Vazquez Solis",
+    "description": "Construyendo sistemas backend robustos y escalables con más de 8 años de experiencia en sistemas distribuidos y arquitectura en la nube.",
+    "contact": "Contactar",
+    "viewProjects": "Ver Proyectos"
+  },
+  "skills": {
+    "title": "Logros Técnicos",
+    "description": "Historial probado de entrega de soluciones y optimizaciones de alto impacto en varios dominios técnicos.",
+    "exploring": "Actualmente Explorando"
+  },
+  "about": {
+    "title": "Sobre Mí",
+    "subtitle": "Desarrollador Backend Senior apasionado por sistemas escalables",
+    "description": "Soy Salim Vazquez Solis, un desarrollador backend experimentado con más de 8 años de experiencia construyendo sistemas de alto rendimiento y escalables para startups y clientes empresariales.\n Con una sólida base en ciencias de la computación y un profundo entendimiento de sistemas distribuidos, he liderado equipos exitosamente para entregar soluciones backend complejas que manejan millones de peticiones diarias.\n Me apasiona el código limpio, la optimización del rendimiento y la implementación de mejores prácticas para la seguridad y confiabilidad.",
+    "stats": {
+      "experience": "Años de Experiencia",
+      "projects": "Proyectos Completados",
+      "companies": "Empresas Colaboradas",
+      "clients": "Clientes Satisfechos"
+    },
+    "services": {
+      "backend": {
+        "title": "Desarrollo Backend",
+        "description": "Construcción de APIs y servicios robustos y escalables."
+      },
+      "database": {
+        "title": "Diseño de Bases de Datos",
+        "description": "Optimización de sistemas de almacenamiento y recuperación de datos."
+      },
+      "cloud": {
+        "title": "Arquitectura en la Nube",
+        "description": "Diseño de infraestructura escalable en AWS, GCP y Azure."
+      },
+      "security": {
+        "title": "Seguridad",
+        "description": "Implementación de prácticas y protocolos de seguridad robustos."
+      }
+    }
+  },
+  "experience": {
+    "title": "Experiencia Laboral",
+    "description": "Más de 8 años de experiencia en la industria construyendo sistemas backend escalables y liderando equipos de desarrollo."
+  },
+  "projects": {
+    "title": "Proyectos Destacados",
+    "description": "Explora algunos de mis proyectos open-source recientes y contribuciones.",
+    "viewProject": "Ver Proyecto",
+    "viewAll": "Ver Todos los Proyectos en GitHub",
+    "filters": {
+      "all": "Todos los Proyectos",
+      "featured": "Destacados",
+      "api": "API",
+      "microservices": "Microservicios",
+      "database": "Base de Datos",
+      "cloud": "Nube"
+    }
+  },
+  "certifications": {
+    "title": "Certificaciones",
+    "description": "Certificaciones profesionales que validan mi experiencia en diversas tecnologías y plataformas.",
+    "verify": "Verificar Credencial",
+    "issued": "Emitido"
+  },
+  "contact": {
+    "title": "Contacto",
+    "description": "¿Tienes un proyecto en mente o te interesa trabajar juntos? ¡No dudes en contactarme!",
+    "form": {
+      "name": "Tu Nombre",
+      "email": "Tu Email",
+      "subject": "Asunto",
+      "message": "Mensaje",
+      "send": "Enviar Mensaje",
+      "sending": "Enviando...",
+      "success": "¡Gracias por tu mensaje! Te responderé pronto."
+    },
+    "info": {
+      "title": "Información de Contacto",
+      "connect": "Conéctate conmigo"
+    }
+  },
+  "footer": {
+    "description": "Construyendo sistemas backend robustos y escalables con pasión y precisión."
+  }
+}
