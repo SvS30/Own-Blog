@@ -116,7 +116,175 @@
   },
   "experience": {
     "title": "Experiencia Laboral",
-    "description": "Más de 3 años de experiencia en la industria construyendo sistemas backend escalables y liderando equipos de desarrollo."
+    "description": "Más de 3 años de experiencia en la industria construyendo sistemas backend escalables y liderando equipos de desarrollo.",
+    "jobs": [
+      {
+        "company": "ASC Education",
+        "role": "Backend Developer",
+        "date": "sept. 2023 - actualidad",
+        "location": "Cancún, Quintana Roo, México (Remoto)",
+        "description": "Encargado del desarrollo y mantenimiento de servicios backend utilizando Go y PostgreSQL, colaborando estrechamente con equipos para cumplir con los requerimientos técnicos y funcionales del cliente.",
+        "achievements": [
+          "Diseño e implementación de APIs escalables en Go para servicios educativos",
+          "Optimización de consultas SQL, mejorando el rendimiento de la base de datos en un 30%",
+          "Documentación clara y mantenible de endpoints RESTful para el equipo frontend",
+          "Automatización de flujos de desarrollo con control de versiones y buenas prácticas de Git"
+        ],
+        "technologies": [
+          "Go",
+          "PostgreSQL",
+          "REST API",
+          "Git"
+        ]
+      },
+      {
+        "company": "Fusible Agencia Digital",
+        "role": "Middle Back-end Developer",
+        "date": "ago. 2022 - oct. 2022",
+        "location": "Querétaro, México",
+        "description": "Responsable del desarrollo de APIs REST utilizando Laravel y AdonisJS, incluyendo integraciones de pasarela de pagos, desarrollo móvil y administración de servidores en AWS.",
+        "achievements": [
+          "Implementación completa de un sistema de pagos con Stripe integrado a Laravel",
+          "Desarrollo de módulos frontend en VueJS conectados a APIs internas",
+          "Administración y despliegue de servicios en AWS EC2 con configuración de certificados SSL usando Certbot",
+          "Colaboración activa en un equipo multidisciplinario bajo metodologías ágiles"
+        ],
+        "technologies": [
+          "Laravel 8",
+          "AdonisJS",
+          "MySQL",
+          "Stripe",
+          "VueJS",
+          "Ionic 5",
+          "AWS EC2",
+          "Certbot"
+        ]
+      },
+      {
+        "company": "Fondo de Ahorro Magisterial Sección 7",
+        "role": "Freelance Backend Developer",
+        "date": "oct. 2021 - feb. 2022",
+        "location": "Tuxtla Gutiérrez, Chiapas, México",
+        "description": "Desarrollo completo de una aplicación web para la gestión de fondos de ahorro, desde el backend hasta pruebas automatizadas.",
+        "achievements": [
+          "Diseño de una API con ExpressJS para administración financiera segura",
+          "Uso de MongoDB para modelar eficientemente transacciones y usuarios",
+          "Cobertura de pruebas con Jest y Supertest superior al 90%",
+          "Entrega puntual del proyecto cumpliendo con todos los requisitos funcionales"
+        ],
+        "technologies": [
+          "ExpressJS",
+          "Pug",
+          "MongoDB",
+          "Jest",
+          "Supertest"
+        ]
+      },
+      {
+        "company": "DIF CEDECO",
+        "role": "Freelance Full Stack Developer",
+        "date": "abr. 2021 - sept. 2021",
+        "location": "Ocosingo, Chiapas, México",
+        "description": "Desarrollo de una aplicación de escritorio y móvil para mejorar la administración de servicios sociales, combinando tecnologías modernas y enfoque multiplataforma.",
+        "achievements": [
+          "Desarrollo de una aplicación de escritorio con JavaFX para gestión de datos",
+          "Implementación de pruebas automatizadas con JUnit y TestFX",
+          "Creación de una app móvil en Flutter para facilitar el acceso a servicios",
+          "Entrega de un sistema robusto utilizado por el personal administrativo"
+        ],
+        "technologies": [
+          "JavaFX 11",
+          "Maven",
+          "MySQL",
+          "Flutter",
+          "JUnit",
+          "TestFX"
+        ]
+      },
+      {
+        "company": "Zelikore",
+        "role": "Backend Developer Jr",
+        "date": "ago. 2020 - mar. 2021",
+        "location": "Seattle, WA, Estados Unidos (Remoto)",
+        "description": "Participación en el desarrollo backend de plataformas SaaS utilizando Django y React, además de la implementación de CI/CD sobre AWS.",
+        "achievements": [
+          "Desarrollo de servicios RESTful en Django conectados a frontend React",
+          "Automatización del despliegue continuo con AWS CodePipeline y Fargate",
+          "Manejo de infraestructura como código mediante CloudFormation y Terraform",
+          "Colaboración con un equipo remoto e internacional"
+        ],
+        "technologies": [
+          "Django",
+          "React",
+          "AWS CodeCommit",
+          "CodeBuild",
+          "Fargate",
+          "CloudFormation"
+        ]
+      },
+      {
+        "company": "Materiales Ocosingo",
+        "role": "Freelance Full Stack Developer",
+        "date": "mar. 2020 - ago. 2020",
+        "location": "Ocosingo, Chiapas, México",
+        "description": "Desarrollo de una plataforma web para la gestión de inventarios y ventas de materiales de construcción, con enfoque en arquitectura limpia y TDD.",
+        "achievements": [
+          "Diseño e implementación de backend en Laravel con TDD",
+          "Desarrollo de la interfaz de usuario con Angular para operaciones rápidas",
+          "Optimización de bases de datos MySQL para manejo de grandes volúmenes de productos",
+          "Capacitación al personal en el uso del sistema desarrollado"
+        ],
+        "technologies": [
+          "Laravel",
+          "Angular",
+          "MySQL",
+          "PHPUnit"
+        ]
+      },
+      {
+        "company": "PROTON DEVS",
+        "role": "Desarrollador de Software Jr",
+        "date": "feb. 2019 - mar. 2020",
+        "location": "Tuxtla Gutiérrez, Chiapas, México",
+        "description": "Responsable del desarrollo de módulos backend y frontend, así como aplicaciones móviles híbridas para clientes corporativos.",
+        "achievements": [
+          "Desarrollo de APIs seguras en Laravel con autenticación JWT",
+          "Construcción de interfaces SPA con Angular",
+          "Desarrollo de apps móviles usando Flutter e Ionic según requerimientos del cliente",
+          "Participación en todas las fases del ciclo de vida del software"
+        ],
+        "technologies": [
+          "Laravel",
+          "Angular",
+          "Flutter",
+          "Ionic",
+          "JWT",
+          "Laravel Passport"
+        ]
+      },
+      {
+        "company": "Progravita",
+        "role": "Co-Fundador y CEO",
+        "date": "2022 - Actualidad",
+        "location": "Remoto",
+        "description": "Liderazgo técnico y estratégico en el desarrollo de soluciones tecnológicas orientadas a eventos sociales, incluyendo sistemas de inscripción y control de participantes.",
+        "achievements": [
+          "Diseño y desarrollo de un sistema web para gestionar carreras altruistas, con más de 20,000 registros procesados",
+          "Liderazgo de un equipo multidisciplinario en el desarrollo de una app móvil complementaria",
+          "Desarrollo de un DBMS personalizado para seguimiento y análisis de datos",
+          "Presentación del producto en eventos regionales de tecnología y emprendimiento"
+        ],
+        "technologies": [
+          "Flutter",
+          "Spring Boot",
+          "PostgreSQL",
+          "Firebase",
+          "Docker"
+        ]
+      }
+    ],
+    "achievements": "Logros",
+    "technologies": "Tecnologías usadas"
   },
   "projects": {
     "title": "Proyectos Destacados",

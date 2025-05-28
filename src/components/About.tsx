@@ -16,7 +16,7 @@ const About: React.FC<AboutProps> = ({ darkMode }) => {
   ];
   const techStack = [
     "Node.js", "Python", "Java", "Php", "Go", "Laravel", "Django", "Express", "Docker", "Kubernetes",
-    "MongoDB", "PostgreSQL", "MySQL", "Redis", "Vue", "React", "RESTful APIs"
+    "MongoDB", "PostgreSQL", "MySQL", "Redis", "Vue", "React", "Flutter", "RESTful APIs"
   ]
 
   return (
