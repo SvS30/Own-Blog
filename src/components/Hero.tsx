@@ -1,5 +1,5 @@
-import React from 'react';
-import { ArrowDown, Github, Linkedin, Twitter } from 'lucide-react';
+import React, { useState } from 'react';
+import { ArrowDown, Github, Linkedin } from 'lucide-react';
 import { useTranslation } from 'react-i18next';
 
 interface HeroProps {
@@ -8,6 +8,7 @@ interface HeroProps {
 
 const Hero: React.FC<HeroProps> = ({ darkMode }) => {
   const { t } = useTranslation();
+  const isHidden = useState(true);
   
   return (
     <section 
@@ -61,7 +62,7 @@ const Hero: React.FC<HeroProps> = ({ darkMode }) => {
                   darkMode 
                     ? 'border-slate-700 hover:border-slate-600 text-white' 
                     : 'border-slate-300 hover:border-slate-400 text-slate-900'
-                }`}
+                } ${isHidden ? 'hidden' : ''}`}
               >
                 {t('hero.viewProjects')}
               </a>

@@ -20,7 +20,7 @@ interface ProjectsProps {
 const Projects: React.FC<ProjectsProps> = ({ darkMode }) => {
   const { t } = useTranslation();
   const [activeFilter, setActiveFilter] = useState<string>('all');
-  
+  const [isHidden] = useState(true);
   const projects: Project[] = t('projects.projects', { returnObjects: true }) as Project[];
   
   const filteredProjects = activeFilter === 'all' 
@@ -58,7 +58,7 @@ const Projects: React.FC<ProjectsProps> = ({ darkMode }) => {
       id="projects" 
       className={`py-24 transition-colors duration-500 ${
         darkMode ? 'bg-slate-950' : 'bg-slate-50'
-      }`}
+      } ${isHidden ? 'hidden' : ''}`}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="mb-16 text-center">

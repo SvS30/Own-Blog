@@ -9,9 +9,9 @@ interface AboutProps {
 const About: React.FC<AboutProps> = ({ darkMode }) => {
   const { t } = useTranslation();
   const stats = [
-    { label: t('about.stats.experience'), value: "3+" },
-    { label: t('about.stats.projects'), value: "10+" },
-    { label: t('about.stats.companies'), value: "3+" },
+    { label: t('about.stats.experience'), value: "5+" },
+    { label: t('about.stats.projects'), value: "13+" },
+    { label: t('about.stats.companies'), value: "5+" },
     { label: t('about.stats.clients'), value: "15+" }
   ];
   const techStack = [
