@@ -6,8 +6,9 @@ interface Certification {
   title: string;
   issuer: string;
   date: string;
-  imageUrl: string;
-  credential: string;
+  imageUrl?: string;
+  credential?: string;
+  link?: string;
 }
 
 interface CertificationsProps {
@@ -18,46 +19,28 @@ const Certifications: React.FC<CertificationsProps> = ({ darkMode }) => {
   const { t } = useTranslation();
   const certifications: Certification[] = [
     {
-      title: "AWS Certified Solutions Architect - Professional",
-      issuer: "Amazon Web Services",
-      date: "July 2023",
-      imageUrl: "https://images.pexels.com/photos/1181675/pexels-photo-1181675.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-      credential: "AWSP-1234567890"
+      title: "Ingeniería en Desarrollo de Software",
+      issuer: "Universidad Politécnica de Chiapas",
+      date: "2018-2021",
+      imageUrl: "https://universidadesdemexico.mx/logos/original/logo-universidad-politecnica-de-chiapas.webp",
+      credential: "",
+      link: "https://www.upchiapas.edu.mx/"
     },
     {
-      title: "Google Professional Cloud Architect",
-      issuer: "Google Cloud",
-      date: "March 2022",
-      imageUrl: "https://images.pexels.com/photos/2115217/pexels-photo-2115217.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-      credential: "GCP-9876543210"
+      title: "Scrum Certified",
+      issuer: "SCRUMStudy",
+      date: "January 2022",
+      imageUrl: "https://www.scrumstudy.com/Scrum-Images/logo-64.png",
+      credential: "895047",
+      link: "https://c46e136a583f7e334124-ac22991740ab4ff17e21daf2ed577041.ssl.cf1.rackcdn.com/Certificate/ScrumFundamentalsCertified-SalimVazquezSolis.-895047.pdf"
     },
     {
-      title: "Microsoft Certified: Azure Solutions Architect Expert",
-      issuer: "Microsoft",
-      date: "November 2021",
-      imageUrl: "https://images.pexels.com/photos/577585/pexels-photo-577585.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-      credential: "MS-1357924680"
-    },
-    {
-      title: "Certified Kubernetes Administrator (CKA)",
-      issuer: "Cloud Native Computing Foundation",
-      date: "August 2021",
-      imageUrl: "https://images.pexels.com/photos/7792811/pexels-photo-7792811.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-      credential: "CKA-2468013579"
-    },
-    {
-      title: "MongoDB Certified Developer Associate",
+      title: "MongoDB",
       issuer: "MongoDB University",
-      date: "May 2020",
-      imageUrl: "https://images.pexels.com/photos/546819/pexels-photo-546819.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-      credential: "MDB-1122334455"
-    },
-    {
-      title: "Oracle Certified Professional, Java SE 11 Developer",
-      issuer: "Oracle",
-      date: "January 2020",
-      imageUrl: "https://images.pexels.com/photos/1181271/pexels-photo-1181271.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-      credential: "OCP-6677889900"
+      date: "Febrero 2025",
+      imageUrl: "https://d36ai2hkxl16us.cloudfront.net/course-uploads/7985c085-3b6a-42d5-b668-e41cb6eedeb0/4gnbpsehb9ih-credlybadge-associatedeveloper2.png",
+      credential: "MDB7ffhdpw6ol",
+      link: "https://ti-user-certificates.s3.amazonaws.com/ae62dcd7-abdc-4e90-a570-83eccba49043/389abd47-b516-4ee9-8a1e-08647fe6d8ae-salim-vazquez-solis-4369fa7f-c6e6-42c4-9056-94dd7179070b-certificate.pdf"
     }
   ];
 
@@ -132,7 +115,7 @@ const Certifications: React.FC<CertificationsProps> = ({ darkMode }) => {
                 </div>
                 
                 <a 
-                  href="#verify" 
+                  href={cert.link} target='_blank' rel='noopener noreferrer'
                   className={`flex items-center text-sm font-medium transition-colors ${
                     darkMode 
                       ? 'text-emerald-400 hover:text-emerald-300' 
