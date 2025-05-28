@@ -11,7 +11,7 @@
   "hero": {
     "role": "Desarrollador Backend",
     "name": "Salim Vazquez Solis",
-    "description": "Construyendo sistemas backend robustos y escalables con más de 3 años de experiencia en sistemas distribuidos y arquitectura en la nube.",
+    "description": "Construyendo sistemas backend robustos y escalables con más de 5 años de experiencia en sistemas distribuidos y arquitectura en la nube.",
     "contact": "Contactar",
     "viewProjects": "Ver Proyectos"
   },
@@ -42,34 +42,13 @@
         ]
       },
       {
-        "title": "Procesamiento de Datos en Tiempo Real",
-        "description": "Se diseñó e implementó un pipeline de procesamiento de datos en tiempo real",
-        "metrics": "Procesamiento exitoso de más de 1 millón de eventos por segundo con una latencia inferior a 100ms",
-        "technologies": [
-          "Kafka",
-          "Elasticsearch",
-          "Python"
-        ]
-      },
-      {
         "title": "Implementación de API Gateway",
         "description": "Se desarrolló una API Gateway centralizada para microservicios",
         "metrics": "Se redujo el tiempo de respuesta de la API en un 60% y se implementó la limitación de tasas, reduciendo la carga del servidor en un 40%",
         "technologies": [
           "Node.js",
           "Redis",
-          "Kong",
-          "GraphQL"
-        ]
-      },
-      {
-        "title": "Particionamiento de Bases de Datos (Sharding)",
-        "description": "Se implementó una estrategia de particionamiento de bases de datos para escalado",
-        "metrics": "Se manejó un crecimiento de datos de 10x manteniendo tiempos de respuesta de consulta inferiores a 50ms",
-        "technologies": [
-          "MongoDB",
-          "Sharding",
-          "Balanceo de Carga"
+          "Nginx"
         ]
       },
       {
@@ -88,7 +67,7 @@
   "about": {
     "title": "Sobre Mí",
     "subtitle": "Desarrollador Backend apasionado por sistemas escalables",
-    "description": "Soy Salim Vazquez Solis, un desarrollador backend experimentado con más de 3 años de experiencia construyendo sistemas de alto rendimiento y escalables para startups y clientes empresariales.\n Con una sólida base en ciencias de la computación y un profundo entendimiento de sistemas distribuidos, he liderado equipos exitosamente para entregar soluciones backend complejas que manejan millones de peticiones diarias.\n Me apasiona el código limpio, la optimización del rendimiento y la implementación de mejores prácticas para la seguridad y confiabilidad.",
+    "description": "Soy Salim Vazquez Solis, un desarrollador backend experimentado con más de 5 años de experiencia construyendo sistemas de alto rendimiento y escalables para startups y clientes empresariales.\n Con una sólida base en ciencias de la computación y un profundo entendimiento de sistemas distribuidos, he liderado equipos exitosamente para entregar soluciones backend complejas que manejan millones de peticiones diarias.\n Me apasiona el código limpio, la optimización del rendimiento y la implementación de mejores prácticas para la seguridad y confiabilidad.",
     "stats": {
       "experience": "Años de Experiencia",
       "projects": "Proyectos Completados",
@@ -123,31 +102,35 @@
         "role": "Backend Developer",
         "date": "sept. 2023 - actualidad",
         "location": "Cancún, Quintana Roo, México (Remoto)",
-        "description": "Encargado del desarrollo y mantenimiento de servicios backend utilizando Go y PostgreSQL, colaborando estrechamente con equipos para cumplir con los requerimientos técnicos y funcionales del cliente.",
+        "description": "Encargado del desarrollo y mantenimiento de servicios backend utilizando Go y PostgreSQL para productos educativos a nivel Latam. Colaborando estrechamente con equipos para cumplir con los requerimientos técnicos y funcionales del cliente.",
         "achievements": [
-          "Diseño e implementación de APIs escalables en Go para servicios educativos",
-          "Optimización de consultas SQL, mejorando el rendimiento de la base de datos en un 30%",
-          "Documentación clara y mantenible de endpoints RESTful para el equipo frontend",
-          "Automatización de flujos de desarrollo con control de versiones y buenas prácticas de Git"
+          "Diseño e implementación de APIs escalables en Go para servicios educativos que manejan millones de peticiones diarias.",
+          "Optimización de consultas SQL, mejorando el rendimiento de la base de datos en un 30%.",
+          "Liderazgo de equipo para desarrollo de producto y migración a arquitectura de microservicios.",
+          "Implementación de pipelines CI/CD y automatización de despliegues."
         ],
         "technologies": [
           "Go",
           "PostgreSQL",
           "REST API",
-          "Git"
+          "Git",
+          "Microservicios",
+          "Docker",
+          "Redis"
         ]
       },
       {
         "company": "Fusible Agencia Digital",
-        "role": "Middle Back-end Developer",
+        "role": "Middle Backend Developer",
         "date": "ago. 2022 - oct. 2022",
-        "location": "Querétaro, México",
+        "location": "Querétaro, México (Remoto)",
         "description": "Responsable del desarrollo de APIs REST utilizando Laravel y AdonisJS, incluyendo integraciones de pasarela de pagos, desarrollo móvil y administración de servidores en AWS.",
         "achievements": [
-          "Implementación completa de un sistema de pagos con Stripe integrado a Laravel",
-          "Desarrollo de módulos frontend en VueJS conectados a APIs internas",
-          "Administración y despliegue de servicios en AWS EC2 con configuración de certificados SSL usando Certbot",
-          "Colaboración activa en un equipo multidisciplinario bajo metodologías ágiles"
+          "Desarrollo de plataforma para streaming y conferencias en tiempo real usando Laravel y Adonis.",
+          "Integración de pasarela de pagos con Stripe para procesamiento de transacciones.",
+          "Despliegue en AWS EC2 con configuración SSL y gestión de S3.",
+          "Manejo de streaming online y QR para eventos en vivo.",
+          "Refactorización de lógica de negocios resultando en +25% mejora de rendimiento."
         ],
         "technologies": [
           "Laravel 8",
@@ -155,9 +138,8 @@
           "MySQL",
           "Stripe",
           "VueJS",
-          "Ionic 5",
           "AWS EC2",
-          "Certbot"
+          "AWS S3"
         ]
       },
       {
@@ -165,19 +147,19 @@
         "role": "Freelance Backend Developer",
         "date": "oct. 2021 - feb. 2022",
         "location": "Tuxtla Gutiérrez, Chiapas, México",
-        "description": "Desarrollo completo de una aplicación web para la gestión de fondos de ahorro, desde el backend hasta pruebas automatizadas.",
+        "description": "Desarrollo completo de una aplicación web para la gestión de fondos de ahorro, desde el backendhasta pruebas automatizadas.",
         "achievements": [
           "Diseño de una API con ExpressJS para administración financiera segura",
           "Uso de MongoDB para modelar eficientemente transacciones y usuarios",
           "Cobertura de pruebas con Jest y Supertest superior al 90%",
-          "Entrega puntual del proyecto cumpliendo con todos los requisitos funcionales"
+          "Concurrencia con Formatos PDF y envio de mails."
         ],
         "technologies": [
           "ExpressJS",
-          "Pug",
           "MongoDB",
           "Jest",
-          "Supertest"
+          "Supertest",
+          "PWA"
         ]
       },
       {
@@ -208,16 +190,21 @@
         "location": "Seattle, WA, Estados Unidos (Remoto)",
         "description": "Participación en el desarrollo backend de plataformas SaaS utilizando Django y React, además de la implementación de CI/CD sobre AWS.",
         "achievements": [
-          "Desarrollo de servicios RESTful en Django conectados a frontend React",
+          "Implementación de servicios RESTful en Django (DRF) conectados a frontend React.",
           "Automatización del despliegue continuo con AWS CodePipeline y Fargate",
-          "Manejo de infraestructura como código mediante CloudFormation y Terraform",
-          "Colaboración con un equipo remoto e internacional"
+          "Gestión de infraestructura como código usando CloudFormation y Terraform.",
+          "Configuración de entornos de desarrollo y producción en AWS.",
+          "Colaboración con un equipo remoto e internacional."
         ],
         "technologies": [
-          "Django",
+          "Django REST Framework",
           "React",
+          "Docker",
+          "Terraform",
           "AWS CodeCommit",
-          "CodeBuild",
+          "AWS RDS",
+          "AWS CodePipeline",
+          "AWS CodeBuild",
           "Fargate",
           "CloudFormation"
         ]
@@ -267,7 +254,7 @@
         "role": "Co-Fundador y CEO",
         "date": "2022 - Actualidad",
         "location": "Remoto",
-        "description": "Liderazgo técnico y estratégico en el desarrollo de soluciones tecnológicas orientadas a eventos sociales, incluyendo sistemas de inscripción y control de participantes.",
+        "description": "Liderazgo técnico y estratégico en el desarrollo de soluciones tecnológicas orientadas a eventos sociales y administrativos.",
         "achievements": [
           "Diseño y desarrollo de un sistema web para gestionar carreras altruistas, con más de 20,000 registros procesados",
           "Liderazgo de un equipo multidisciplinario en el desarrollo de una app móvil complementaria",
