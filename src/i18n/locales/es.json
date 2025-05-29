@@ -1,0 +1,409 @@
+{
+  "nav": {
+    "home": "Inicio",
+    "about": "Sobre mí",
+    "skills": "Habilidades",
+    "experience": "Experiencia",
+    "projects": "Proyectos",
+    "certifications": "Certificaciones",
+    "contact": "Contacto"
+  },
+  "hero": {
+    "role": "Desarrollador Backend",
+    "name": "Salim Vazquez Solis",
+    "description": "Construyendo sistemas backend robustos y escalables con más de 5 años de experiencia en sistemas distribuidos y arquitectura en la nube.",
+    "contact": "Contactar",
+    "viewProjects": "Ver Proyectos"
+  },
+  "skills": {
+    "title": "Logros Técnicos",
+    "description": "Historial probado de entrega de soluciones y optimizaciones de alto impacto en varios dominios técnicos.",
+    "exploring": "Actualmente Explorando",
+    "achievements": [
+      {
+        "title": "Optimización del Rendimiento de Consultas",
+        "description": "Se optimizaron consultas críticas de bases de datos en un sistema financiero de alto tráfico",
+        "metrics": "Se redujo el tiempo promedio de ejecución de consultas de 20s a 2s, mejorando la respuesta general del sistema en un 90%",
+        "technologies": [
+          "PostgreSQL",
+          "Redis",
+          "Optimización de Consultas"
+        ]
+      },
+      {
+        "title": "Arquitectura de Microservicios",
+        "description": "Se lideró la migración de una arquitectura monolítica a microservicios",
+        "metrics": "Se redujo el tiempo de implementación en un 75% y se mejoró la fiabilidad del sistema en un 99.9%",
+        "technologies": [
+          "Node.js",
+          "Docker",
+          "Kubernetes",
+          "AWS"
+        ]
+      },
+      {
+        "title": "Implementación de API Gateway",
+        "description": "Se desarrolló una API Gateway centralizada para microservicios",
+        "metrics": "Se redujo el tiempo de respuesta de la API en un 60% y se implementó la limitación de tasas, reduciendo la carga del servidor en un 40%",
+        "technologies": [
+          "Node.js",
+          "Redis",
+          "Nginx"
+        ]
+      },
+      {
+        "title": "Mejora de la Seguridad",
+        "description": "Se implementaron medidas de seguridad integrales",
+        "metrics": "Se logró la conformidad con SOC2 y se redujeron los incidentes de seguridad en un 95%",
+        "technologies": [
+          "OAuth2",
+          "JWT",
+          "Cifrado",
+          "Auditoría de Seguridad"
+        ]
+      }
+    ]
+  },
+  "about": {
+    "title": "Sobre Mí",
+    "subtitle": "Desarrollador Backend apasionado por sistemas escalables",
+    "description": "Soy Salim Vazquez Solis, un desarrollador backend experimentado con más de 5 años de experiencia construyendo sistemas de alto rendimiento y escalables para startups y clientes empresariales.\n Con una sólida base en ciencias de la computación y un profundo entendimiento de sistemas distribuidos, he liderado equipos exitosamente para entregar soluciones backend complejas que manejan millones de peticiones diarias.\n Me apasiona el código limpio, la optimización del rendimiento y la implementación de mejores prácticas para la seguridad y confiabilidad.",
+    "stats": {
+      "experience": "Años de Experiencia",
+      "projects": "Proyectos Completados",
+      "companies": "Empresas Colaboradas",
+      "clients": "Clientes Satisfechos"
+    },
+    "services": {
+      "backend": {
+        "title": "Desarrollo Backend",
+        "description": "Construcción de APIs y servicios robustos y escalables."
+      },
+      "database": {
+        "title": "Diseño de Bases de Datos",
+        "description": "Optimización de sistemas de almacenamiento y gestión completa de datos."
+      },
+      "cloud": {
+        "title": "Arquitectura en la Nube",
+        "description": "Diseño de infraestructura escalable en AWS, GCP y Azure."
+      },
+      "security": {
+        "title": "Seguridad",
+        "description": "Implementación de prácticas y protocolos de seguridad robustos."
+      }
+    }
+  },
+  "experience": {
+    "title": "Experiencia Laboral",
+    "description": "Más de 5 años de experiencia en la industria construyendo sistemas backend escalables y liderando equipos de desarrollo.",
+    "CV": "Descargar CV",
+    "jobs": [
+      {
+        "company": "ASC Education",
+        "role": "Backend Developer",
+        "date": "sept. 2023 - actualidad",
+        "location": "Cancún, Quintana Roo, México (Remoto)",
+        "description": "Encargado del desarrollo y mantenimiento de servicios backend utilizando Go y PostgreSQL para productos educativos a nivel Latam. Colaborando estrechamente con equipos para cumplir con los requerimientos técnicos y funcionales del cliente.",
+        "achievements": [
+          "Diseño e implementación de APIs escalables en Go para servicios educativos que manejan millones de peticiones diarias.",
+          "Optimización de consultas SQL, mejorando el rendimiento de la base de datos en un 30%.",
+          "Liderazgo de equipo para desarrollo de producto y migración a arquitectura de microservicios.",
+          "Implementación de pipelines CI/CD y automatización de despliegues."
+        ],
+        "technologies": [
+          "Go",
+          "PostgreSQL",
+          "REST API",
+          "Git",
+          "Microservicios",
+          "Docker",
+          "Redis"
+        ]
+      },
+      {
+        "company": "Fusible Agencia Digital",
+        "role": "Middle Backend Developer",
+        "date": "ago. 2022 - oct. 2022",
+        "location": "Querétaro, México (Remoto)",
+        "description": "Responsable del desarrollo de APIs REST utilizando Laravel y AdonisJS, incluyendo integraciones de pasarela de pagos, desarrollo móvil y administración de servidores en AWS.",
+        "achievements": [
+          "Desarrollo de plataforma para streaming y conferencias en tiempo real usando Laravel y Adonis.",
+          "Integración de pasarela de pagos con Stripe para procesamiento de transacciones.",
+          "Despliegue en AWS EC2 con configuración SSL y gestión de S3.",
+          "Manejo de streaming online y QR para eventos en vivo.",
+          "Refactorización de lógica de negocios resultando en +25% mejora de rendimiento."
+        ],
+        "technologies": [
+          "Laravel 8",
+          "AdonisJS",
+          "MySQL",
+          "Stripe",
+          "VueJS",
+          "AWS EC2",
+          "AWS S3"
+        ]
+      },
+      {
+        "company": "Fondo de Ahorro Magisterial Sección 7",
+        "role": "Freelance Backend Developer",
+        "date": "oct. 2021 - feb. 2022",
+        "location": "Tuxtla Gutiérrez, Chiapas, México",
+        "description": "Desarrollo completo de una aplicación web para la gestión de fondos de ahorro, desde el backendhasta pruebas automatizadas.",
+        "achievements": [
+          "Diseño de una API con ExpressJS para administración financiera segura",
+          "Uso de MongoDB para modelar eficientemente transacciones y usuarios",
+          "Cobertura de pruebas con Jest y Supertest superior al 90%",
+          "Concurrencia con Formatos PDF y envio de mails."
+        ],
+        "technologies": [
+          "ExpressJS",
+          "MongoDB",
+          "Jest",
+          "Supertest",
+          "PWA"
+        ]
+      },
+      {
+        "company": "DIF CEDECO",
+        "role": "Freelance Full Stack Developer",
+        "date": "abr. 2021 - sept. 2021",
+        "location": "Ocosingo, Chiapas, México",
+        "description": "Desarrollo de una aplicación de escritorio y móvil para mejorar la administración de servicios sociales, combinando tecnologías modernas y enfoque multiplataforma.",
+        "achievements": [
+          "Desarrollo de una aplicación de escritorio con JavaFX para gestión de datos",
+          "Implementación de pruebas automatizadas con JUnit y TestFX",
+          "Creación de una app móvil en Flutter para facilitar el acceso a servicios",
+          "Entrega de un sistema robusto utilizado por el personal administrativo"
+        ],
+        "technologies": [
+          "JavaFX 11",
+          "Maven",
+          "MySQL",
+          "Flutter",
+          "JUnit",
+          "TestFX"
+        ]
+      },
+      {
+        "company": "Zelikore",
+        "role": "Backend Developer Jr",
+        "date": "ago. 2020 - mar. 2021",
+        "location": "Seattle, WA, Estados Unidos (Remoto)",
+        "description": "Participación en el desarrollo backend de plataformas SaaS utilizando Django y React, además de la implementación de CI/CD sobre AWS.",
+        "achievements": [
+          "Implementación de servicios RESTful en Django (DRF) conectados a frontend React.",
+          "Automatización del despliegue continuo con AWS CodePipeline y Fargate",
+          "Gestión de infraestructura como código usando CloudFormation y Terraform.",
+          "Configuración de entornos de desarrollo y producción en AWS.",
+          "Colaboración con un equipo remoto e internacional."
+        ],
+        "technologies": [
+          "Django REST Framework",
+          "React",
+          "Docker",
+          "Terraform",
+          "AWS CodeCommit",
+          "AWS RDS",
+          "AWS CodePipeline",
+          "AWS CodeBuild",
+          "Fargate",
+          "CloudFormation"
+        ]
+      },
+      {
+        "company": "Materiales Ocosingo",
+        "role": "Freelance Full Stack Developer",
+        "date": "mar. 2020 - ago. 2020",
+        "location": "Ocosingo, Chiapas, México",
+        "description": "Desarrollo de una plataforma web para la gestión de inventarios y ventas de materiales de construcción, con enfoque en arquitectura limpia y TDD.",
+        "achievements": [
+          "Diseño e implementación de backend en Laravel con TDD",
+          "Desarrollo de la interfaz de usuario con Angular para operaciones rápidas",
+          "Optimización de bases de datos MySQL para manejo de grandes volúmenes de productos",
+          "Capacitación al personal en el uso del sistema desarrollado"
+        ],
+        "technologies": [
+          "Laravel",
+          "Angular",
+          "MySQL",
+          "PHPUnit"
+        ]
+      },
+      {
+        "company": "PROTON DEVS",
+        "role": "Desarrollador de Software Jr",
+        "date": "feb. 2019 - mar. 2020",
+        "location": "Tuxtla Gutiérrez, Chiapas, México",
+        "description": "Responsable del desarrollo de módulos backend y frontend, así como aplicaciones móviles híbridas para clientes corporativos.",
+        "achievements": [
+          "Desarrollo de APIs seguras en Laravel con autenticación JWT",
+          "Construcción de interfaces SPA con Angular",
+          "Desarrollo de apps móviles usando Flutter e Ionic según requerimientos del cliente",
+          "Participación en todas las fases del ciclo de vida del software"
+        ],
+        "technologies": [
+          "Laravel",
+          "Angular",
+          "Flutter",
+          "Ionic",
+          "JWT",
+          "Laravel Passport"
+        ]
+      },
+      {
+        "company": "Progravita",
+        "role": "Co-Fundador y CEO",
+        "date": "2022 - Actualidad",
+        "location": "Remoto",
+        "description": "Liderazgo técnico y estratégico en el desarrollo de soluciones tecnológicas orientadas a eventos sociales y administrativos.",
+        "achievements": [
+          "Diseño y desarrollo de un sistema web para gestionar carreras altruistas, con más de 20,000 registros procesados",
+          "Liderazgo de un equipo multidisciplinario en el desarrollo de una app móvil complementaria",
+          "Desarrollo de un DBMS personalizado para seguimiento y análisis de datos",
+          "Presentación del producto en eventos regionales de tecnología y emprendimiento"
+        ],
+        "technologies": [
+          "Flutter",
+          "Spring Boot",
+          "PostgreSQL",
+          "Firebase",
+          "Docker"
+        ]
+      }
+    ],
+    "achievements": "Logros",
+    "technologies": "Tecnologías usadas"
+  },
+  "projects": {
+    "title": "Proyectos Destacados",
+    "description": "Explora algunos de mis proyectos open-source recientes y contribuciones.",
+    "viewProject": "Ver Proyecto",
+    "viewAll": "Ver Todos los Proyectos en GitHub",
+    "filters": {
+      "all": "Todos los Proyectos",
+      "featured": "Destacados",
+      "api": "API",
+      "microservices": "Microservicios",
+      "database": "Base de Datos",
+      "cloud": "Nube"
+    },
+    "projects": [
+      {
+        "title": "DistributedCache",
+        "description": "Un sistema de caché distribuido de alto rendimiento construido con Go, que soporta múltiples políticas de desalojo y replicación de clústeres.",
+        "imageUrl": "https://images.pexels.com/photos/1181271/pexels-photo-1181271.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+        "technologies": [
+          "Go",
+          "Redis Protocol",
+          "RAFT Consensus",
+          "Docker"
+        ],
+        "githubUrl": "https://github.com/SvS30/distributedcache",
+        "demoUrl": "https://distributedcache-demo.com",
+        "category": "database",
+        "featured": true
+      },
+      {
+        "title": "MicroAuth",
+        "description": "Un microservicio seguro de autenticación y autorización con soporte para OAuth2, JWT y autenticación multifactor.",
+        "imageUrl": "https://images.pexels.com/photos/60504/security-protection-anti-virus-software-60504.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+        "technologies": [
+          "Node.js",
+          "TypeScript",
+          "MongoDB",
+          "OAuth2",
+          "Docker"
+        ],
+        "githubUrl": "https://github.com/SvS30/microauth",
+        "category": "microservices",
+        "featured": true
+      },
+      {
+        "title": "EventFlow",
+        "description": "Un framework de arquitectura basada en eventos para construir microservicios escalables con soporte para múltiples corredores de mensajes (message brokers).",
+        "imageUrl": "https://images.pexels.com/photos/7792805/pexels-photo-7792805.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+        "technologies": [
+          "Java",
+          "Spring Boot",
+          "Kafka",
+          "RabbitMQ",
+          "Avro"
+        ],
+        "githubUrl": "https://github.com/SvS30/eventflow",
+        "demoUrl": "https://eventflow-demo.com",
+        "category": "microservices",
+        "featured": true
+      },
+      {
+        "title": "DataLake CLI",
+        "description": "Una herramienta de línea de comandos para gestionar lagos de datos en AWS S3, con soporte para validación, transformación y consulta de datos.",
+        "imageUrl": "https://images.pexels.com/photos/7376/startup-photos.jpg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+        "technologies": [
+          "Python",
+          "AWS S3",
+          "Pandas",
+          "Apache Parquet"
+        ],
+        "githubUrl": "https://github.com/SvS30/datalake-cli",
+        "category": "cloud",
+        "featured": false
+      },
+      {
+        "title": "RESTful API Framework",
+        "description": "Un framework ligero para construir APIs RESTful con generación automática de documentación OpenAPI.",
+        "imageUrl": "https://images.pexels.com/photos/546819/pexels-photo-546819.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+        "technologies": [
+          "Node.js",
+          "Express",
+          "OpenAPI",
+          "JWT"
+        ],
+        "githubUrl": "https://github.com/SvS30/restful-api-framework",
+        "demoUrl": "https://api-framework-demo.com",
+        "category": "api",
+        "featured": false
+      },
+      {
+        "title": "Herramienta de Despliegue Serverless",
+        "description": "Una herramienta para desplegar y gestionar aplicaciones serverless en múltiples proveedores de nube.",
+        "imageUrl": "https://images.pexels.com/photos/1148820/pexels-photo-1148820.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+        "technologies": [
+          "TypeScript",
+          "AWS Lambda",
+          "Google Cloud Functions",
+          "Azure Functions"
+        ],
+        "githubUrl": "https://github.com/SvS30/serverless-deployment-tool",
+        "category": "cloud",
+        "featured": false
+      }
+    ]
+  },
+  "certifications": {
+    "title": "Certificaciones",
+    "description": "Certificaciones profesionales que validan mi experiencia en diversas tecnologías y plataformas.",
+    "verify": "Verificar Credencial",
+    "issued": "Emitido"
+  },
+  "contact": {
+    "title": "Contacto",
+    "description": "¿Tienes un proyecto en mente o te interesa trabajar juntos? ¡No dudes en contactarme!",
+    "form": {
+      "name": "Tu Nombre",
+      "email": "Tu Email",
+      "subject": "Asunto",
+      "message": "Mensaje",
+      "send": "Enviar Mensaje",
+      "sending": "Enviando...",
+      "success": "¡Gracias por tu mensaje! Te responderé pronto.",
+      "error": "Lo siento, hay un error en el envio de mails!"
+    },
+    "info": {
+      "title": "Información de Contacto",
+      "connect": "Conéctate conmigo"
+    }
+  },
+  "footer": {
+    "description": "Construyendo sistemas backend robustos y escalables con pasión y precisión."
+  }
+}
