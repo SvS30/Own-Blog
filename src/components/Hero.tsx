@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { ArrowDown, Github, Linkedin } from 'lucide-react';
+import { ArrowDown, Github, Linkedin, Newspaper} from 'lucide-react';
 import { useTranslation } from 'react-i18next';
 
 interface HeroProps {
@@ -90,6 +90,17 @@ const Hero: React.FC<HeroProps> = ({ darkMode }) => {
                 aria-label="LinkedIn"
               >
                 <Linkedin size={24} />
+              </a>
+              <a 
+                href="https://medium.com/@salimvzqz"
+                target="_blank"
+                rel="noopener noreferrer"
+                className={`transform transition-transform hover:scale-110 ${
+                  darkMode ? 'text-slate-400 hover:text-white' : 'text-slate-600 hover:text-slate-900'
+                }`}
+                aria-label="CV"
+              >
+                <Newspaper size={24} />
               </a>
             </div>
           </div>

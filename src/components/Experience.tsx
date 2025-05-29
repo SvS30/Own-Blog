@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Building, Calendar, ChevronDown, ChevronUp } from 'lucide-react';
+import { Building, Calendar, ChevronDown, ChevronUp, FileBadge2 } from 'lucide-react';
 import { useTranslation } from 'react-i18next';
 
 interface Job {
@@ -49,7 +49,17 @@ const Experience: React.FC<ExperienceProps> = ({ darkMode }) => {
             {t('experience.description')}
           </p>
         </div>
-
+        <div className="flex justify-end mb-8">
+          <a 
+            href="https://l.linklyhq.com/l/pUvf"
+            target='_blank'
+            rel="noopener noreferrer"
+            className="px-6 py-3 bg-emerald-500 hover:bg-emerald-600 text-white font-medium rounded-md transition-all transform hover:translate-y-[-2px] shadow-md hover:shadow-lg"
+          >
+            <FileBadge2 size={16} className="inline mr-2" />
+            {t('experience.CV')}
+          </a>
+        </div>
         <div className="space-y-6">
           {jobs.map((job, index) => (
             <div
