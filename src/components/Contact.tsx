@@ -1,13 +1,14 @@
-import React, { useState } from 'react';
+import React, { useRef, useState, useEffect } from 'react';
 import { Mail, MessageSquare, Send } from 'lucide-react';
 import { useTranslation } from 'react-i18next';
-import { Resend } from 'resend';
+import emailjs from '@emailjs/browser';
 
 interface ContactProps {
   darkMode: boolean;
 }
 
 const Contact: React.FC<ContactProps> = ({ darkMode }) => {
+  const form = useRef<HTMLFormElement>(null);
   const [formData, setFormData] = useState({
     name: '',
     email: '',
@@ -16,39 +17,47 @@ const Contact: React.FC<ContactProps> = ({ darkMode }) => {
   });
   const { t } = useTranslation();
   const [isSubmitting, setIsSubmitting] = useState(false);
-  const [submitted, setSubmitted] = useState(false);
+  const [emailStatus, setEmailStatus] = useState('');
+
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     const { name, value } = e.target;
     setFormData(prev => ({ ...prev, [name]: value }));
   };
-  const resend = new Resend(import.meta.env.VITE_RESEND_API_KEY || '');
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
+    if (!form.current) return;
     setIsSubmitting(true);
-    console.log('Form submitted:', formData);
-    // Simulate form submission
-    await resend.emails.send({
-      from: formData.email,
-      to: ['salimvzqz@gmail.com'],
-      subject: formData.subject,
-      html: '<p>it works!</p>'
-    });
-    console.log('Email sent successfully');
-    // Reset form after submission
-    setFormData({
-      name: '',
-      email: '',
-      subject: '',
-      message: ''
-    });
-
-    // Reset submitted state after 5 seconds
-    setTimeout(() => {
-      setSubmitted(false);
+    setEmailStatus('');
+    try {
+      await emailjs.sendForm(
+        'service_p5f0pp7',
+        'template_hx7ycko',
+        form.current,
+        'BrGYtepjTrk24IDdn'
+      );
+      setEmailStatus(t('contact.form.success'));
+      setFormData({
+        name: '',
+        email: '',
+        subject: '',
+        message: ''
+      });
+    } catch (error: any) {
+      console.error(`Error al enviar: ${error?.text || error}`);
+      setEmailStatus(t('contact.form.error'));
+    } finally {
       setIsSubmitting(false);
-    }, 5000);
+    }
   };
+
+  useEffect(() => {
+    if (emailStatus) {
+      const timer = setTimeout(() => setEmailStatus(''), 5000);
+      return () => clearTimeout(timer);
+    }
+  }, [emailStatus]);
+
 
   const contactInfo = [
     {
@@ -93,8 +102,8 @@ const Contact: React.FC<ContactProps> = ({ darkMode }) => {
                     key={index}
                     href={info.link}
                     className={`flex items-start p-4 rounded-lg transition-all ${darkMode
-                        ? 'hover:bg-slate-800 text-slate-300 hover:text-white'
-                        : 'hover:bg-slate-50 text-slate-700 hover:text-slate-900'
+                      ? 'hover:bg-slate-800 text-slate-300 hover:text-white'
+                      : 'hover:bg-slate-50 text-slate-700 hover:text-slate-900'
                       }`}
                   >
                     <div className={`p-3 rounded-full mr-4 ${darkMode ? 'bg-slate-800 text-emerald-400' : 'bg-emerald-50 text-emerald-600'
@@ -126,8 +135,8 @@ const Contact: React.FC<ContactProps> = ({ darkMode }) => {
                     target="_blank"
                     rel="noopener noreferrer"
                     className={`p-3 rounded-full transition-all transform hover:scale-110 ${darkMode
-                        ? 'bg-slate-800 text-white hover:bg-slate-700'
-                        : 'bg-slate-100 text-slate-700 hover:bg-slate-200'
+                      ? 'bg-slate-800 text-white hover:bg-slate-700'
+                      : 'bg-slate-100 text-slate-700 hover:bg-slate-200'
                       }`}
                     aria-label="GitHub"
                   >
@@ -151,8 +160,8 @@ const Contact: React.FC<ContactProps> = ({ darkMode }) => {
                     target="_blank"
                     rel="noopener noreferrer"
                     className={`p-3 rounded-full transition-all transform hover:scale-110 ${darkMode
-                        ? 'bg-slate-800 text-white hover:bg-slate-700'
-                        : 'bg-slate-100 text-slate-700 hover:bg-slate-200'
+                      ? 'bg-slate-800 text-white hover:bg-slate-700'
+                      : 'bg-slate-100 text-slate-700 hover:bg-slate-200'
                       }`}
                     aria-label="LinkedIn"
                   >
@@ -185,16 +194,18 @@ const Contact: React.FC<ContactProps> = ({ darkMode }) => {
                 {t('contact.form.send')}
               </h3>
 
-              {submitted ? (
+              {(isSubmitting || emailStatus) ? (
                 <div className={`rounded-lg p-6 mb-6 flex items-center ${darkMode ? 'bg-emerald-900/20 text-emerald-400' : 'bg-emerald-50 text-emerald-700'
                   }`}>
                   <MessageSquare size={24} className="mr-3" />
                   <p className="font-medium">
-                    {t('contact.form.success')}
+                    {isSubmitting && !emailStatus
+                      ? t('contact.form.sending')
+                      : emailStatus}
                   </p>
                 </div>
               ) : (
-                <form onSubmit={handleSubmit} className="space-y-6">
+                <form onSubmit={handleSubmit} ref={form} className="space-y-6">
                   <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
                     <div>
                       <label
@@ -212,8 +223,8 @@ const Contact: React.FC<ContactProps> = ({ darkMode }) => {
                         onChange={handleChange}
                         required
                         className={`w-full px-4 py-3 rounded-lg transition-colors ${darkMode
-                            ? 'bg-slate-800 text-white border-slate-700 focus:border-emerald-500'
-                            : 'bg-slate-50 text-slate-900 border-slate-200 focus:border-emerald-500'
+                          ? 'bg-slate-800 text-white border-slate-700 focus:border-emerald-500'
+                          : 'bg-slate-50 text-slate-900 border-slate-200 focus:border-emerald-500'
                           } border focus:ring-1 focus:ring-emerald-500 focus:outline-none`}
                         placeholder="John Doe"
                       />
@@ -234,8 +245,8 @@ const Contact: React.FC<ContactProps> = ({ darkMode }) => {
                         onChange={handleChange}
                         required
                         className={`w-full px-4 py-3 rounded-lg transition-colors ${darkMode
-                            ? 'bg-slate-800 text-white border-slate-700 focus:border-emerald-500'
-                            : 'bg-slate-50 text-slate-900 border-slate-200 focus:border-emerald-500'
+                          ? 'bg-slate-800 text-white border-slate-700 focus:border-emerald-500'
+                          : 'bg-slate-50 text-slate-900 border-slate-200 focus:border-emerald-500'
                           } border focus:ring-1 focus:ring-emerald-500 focus:outline-none`}
                         placeholder="john@example.com"
                       />
@@ -258,8 +269,8 @@ const Contact: React.FC<ContactProps> = ({ darkMode }) => {
                       onChange={handleChange}
                       required
                       className={`w-full px-4 py-3 rounded-lg transition-colors ${darkMode
-                          ? 'bg-slate-800 text-white border-slate-700 focus:border-emerald-500'
-                          : 'bg-slate-50 text-slate-900 border-slate-200 focus:border-emerald-500'
+                        ? 'bg-slate-800 text-white border-slate-700 focus:border-emerald-500'
+                        : 'bg-slate-50 text-slate-900 border-slate-200 focus:border-emerald-500'
                         } border focus:ring-1 focus:ring-emerald-500 focus:outline-none`}
                       placeholder="Project | Inquiry"
                     />
@@ -281,8 +292,8 @@ const Contact: React.FC<ContactProps> = ({ darkMode }) => {
                       required
                       rows={5}
                       className={`w-full px-4 py-3 rounded-lg transition-colors ${darkMode
-                          ? 'bg-slate-800 text-white border-slate-700 focus:border-emerald-500'
-                          : 'bg-slate-50 text-slate-900 border-slate-200 focus:border-emerald-500'
+                        ? 'bg-slate-800 text-white border-slate-700 focus:border-emerald-500'
+                        : 'bg-slate-50 text-slate-900 border-slate-200 focus:border-emerald-500'
                         } border focus:ring-1 focus:ring-emerald-500 focus:outline-none`}
                       placeholder="Tell me about your project or inquiry..."
                     ></textarea>

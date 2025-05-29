@@ -394,7 +394,8 @@
       "message": "Message",
       "send": "Send Message",
       "sending": "Sending...",
-      "success": "Thanks for your message! I'll get back to you soon."
+      "success": "Thanks for your message! I'll get back to you soon.",
+      "error": "Im sorry, there errors on email service"
     },
     "info": {
       "title": "Contact Information",

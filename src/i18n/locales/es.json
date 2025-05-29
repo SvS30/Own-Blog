@@ -394,7 +394,8 @@
       "message": "Mensaje",
       "send": "Enviar Mensaje",
       "sending": "Enviando...",
-      "success": "¡Gracias por tu mensaje! Te responderé pronto."
+      "success": "¡Gracias por tu mensaje! Te responderé pronto.",
+      "error": "Lo siento, hay un error en el envio de mails!"
     },
     "info": {
       "title": "Información de Contacto",
