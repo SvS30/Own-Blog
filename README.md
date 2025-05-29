@@ -34,7 +34,9 @@ This site showcases my experience, projects, certifications, and skills as a bac
 3. **Configure environment**:
    - Copy `.env.example` to `.env` and add your [EmailJS](https://dashboard.emailjs.com/) API KEY:
       ```
-      VITE_RESEND_API_KEY=your_resend_api_key_here
+      VITE_EMAIL_PUBLIC_KEY=your_emailjs_public_key_here
+      VITE_EMAIL_SERVICE_ID=your_emailjs_service_id
+      VITE_EMAIL_TEMPLATE_ID=your_emailjs_template_id
       ```
 4. **Run the development server:**
    ```sh
