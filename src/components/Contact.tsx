@@ -31,10 +31,10 @@ const Contact: React.FC<ContactProps> = ({ darkMode }) => {
     setEmailStatus('');
     try {
       await emailjs.sendForm(
-        'service_p5f0pp7',
-        'template_hx7ycko',
+        import.meta.env.VITE_EMAIL_SERVICE_ID,
+        import.meta.env.VITE_EMAIL_TEMPLATE_ID,
         form.current,
-        'BrGYtepjTrk24IDdn'
+        import.meta.env.VITE_EMAIL.PUBLIC_KEY
       );
       setEmailStatus(t('contact.form.success'));
       setFormData({
