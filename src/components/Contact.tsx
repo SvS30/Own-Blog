@@ -34,7 +34,7 @@ const Contact: React.FC<ContactProps> = ({ darkMode }) => {
         import.meta.env.VITE_EMAIL_SERVICE_ID,
         import.meta.env.VITE_EMAIL_TEMPLATE_ID,
         form.current,
-        import.meta.env.VITE_EMAIL.PUBLIC_KEY
+        import.meta.env.VITE_EMAIL_PUBLIC_KEY
       );
       setEmailStatus(t('contact.form.success'));
       setFormData({
